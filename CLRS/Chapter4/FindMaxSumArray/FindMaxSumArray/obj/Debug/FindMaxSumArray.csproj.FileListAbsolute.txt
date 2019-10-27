@@ -1,5 +1,5 @@
-C:\Users\Administrator\source\repos\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.exe.config
-C:\Users\Administrator\source\repos\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.exe
-C:\Users\Administrator\source\repos\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.pdb
-C:\Users\Administrator\source\repos\FindMaxSumArray\FindMaxSumArray\obj\Debug\FindMaxSumArray.exe
-C:\Users\Administrator\source\repos\FindMaxSumArray\FindMaxSumArray\obj\Debug\FindMaxSumArray.pdb
+D:\workspace\CLRS\Chapter4\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.exe.config
+D:\workspace\CLRS\Chapter4\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.exe
+D:\workspace\CLRS\Chapter4\FindMaxSumArray\FindMaxSumArray\bin\Debug\FindMaxSumArray.pdb
+D:\workspace\CLRS\Chapter4\FindMaxSumArray\FindMaxSumArray\obj\Debug\FindMaxSumArray.exe
+D:\workspace\CLRS\Chapter4\FindMaxSumArray\FindMaxSumArray\obj\Debug\FindMaxSumArray.pdb
