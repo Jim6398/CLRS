@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareMatrixMultiply", "SquareMatrixMultiply\SquareMatrixMultiply.csproj", "{99CE7B3E-63DA-4892-8A6D-C2B7A9AAF5FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99CE7B3E-63DA-4892-8A6D-C2B7A9AAF5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CE7B3E-63DA-4892-8A6D-C2B7A9AAF5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CE7B3E-63DA-4892-8A6D-C2B7A9AAF5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CE7B3E-63DA-4892-8A6D-C2B7A9AAF5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35735C9A-593E-4E5B-9435-13ADB97F9D64}
+	EndGlobalSection
+EndGlobal
