@@ -19,36 +19,10 @@ namespace SquareMatrixMultiplyRecursive.Entity
         {
             int middleRowIndex = (inputMatrix.StartRow + inputMatrix.EndRow) / 2;
             int middleColIndex = (inputMatrix.StartCol + inputMatrix.EndCol) / 2;
-            A11 = new MatrixWrapper() { 
-                Matrix = this.inputMatrix.Matrix, 
-                StartRow = this.inputMatrix.StartRow, 
-                EndRow = middleRowIndex,
-                StartCol = inputMatrix.StartCol,
-                EndCol = middleColIndex
-            };
-            A12 = new MatrixWrapper() { 
-                Matrix = this.inputMatrix.Matrix,
-                StartRow = this.inputMatrix.StartRow,
-                EndRow = middleRowIndex,
-                StartCol = middleColIndex+1,
-                EndCol = this.inputMatrix.EndCol
-            };
-            A21 = new MatrixWrapper()
-            {
-                Matrix = this.inputMatrix.Matrix,
-                StartRow = middleRowIndex + 1,
-                EndRow = this.inputMatrix.EndRow,
-                StartCol = inputMatrix.StartCol,
-                EndCol = middleColIndex
-            };
-            A22 = new MatrixWrapper()
-            {
-                Matrix = this.inputMatrix.Matrix,
-                StartRow = middleRowIndex + 1,
-                EndRow = this.inputMatrix.EndRow,
-                StartCol = middleColIndex + 1,
-                EndCol = this.inputMatrix.EndCol
-            };
+            A11 = new MatrixWrapper(this.inputMatrix.Matrix, this.inputMatrix.StartRow, middleRowIndex, inputMatrix.StartCol, middleColIndex);
+            A12 = new MatrixWrapper(this.inputMatrix.Matrix, this.inputMatrix.StartRow, middleRowIndex, middleColIndex + 1, this.inputMatrix.EndCol);
+            A21 = new MatrixWrapper(this.inputMatrix.Matrix, middleRowIndex + 1, this.inputMatrix.EndRow, inputMatrix.StartCol, middleColIndex);
+            A22 = new MatrixWrapper(this.inputMatrix.Matrix, middleRowIndex + 1, this.inputMatrix.EndRow, middleColIndex + 1, this.inputMatrix.EndCol);
         }
 
        public MatrixWrapper A11

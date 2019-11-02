@@ -29,44 +29,17 @@ namespace SquareMatrixMultiplyRecursive
             MatrixDivideResult dividedMatrixA = new MatrixDivideResult(matrixA);
             MatrixDivideResult dividedMatrixB = new MatrixDivideResult(matrixB);
             // 11
-            this.CopyTo(this.MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A11, dividedMatrixB.A11), MatrixMultipleByRecursive(dividedMatrixA.A12, dividedMatrixB.A21))
-                , new MatrixWrapper() { Matrix = resultRawMatrix,
-                    StartRow = 0,
-                    EndRow = 0 + dividedMatrixA.A11.RowCount - 1, 
-                    StartCol = 0, 
-                    EndCol = 0 + dividedMatrixA.A11.ColCount - 1
-                });
+            this.CopyTo(MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A11, dividedMatrixB.A11), MatrixMultipleByRecursive(dividedMatrixA.A12, dividedMatrixB.A21))
+                , new MatrixWrapper(resultRawMatrix, 0, dividedMatrixA.A11.RowCount - 1, 0, dividedMatrixA.A11.ColCount - 1));
             // 12
-            this.CopyTo(this.MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A11, dividedMatrixB.A12), MatrixMultipleByRecursive(dividedMatrixA.A12, dividedMatrixB.A22))
-    , new MatrixWrapper()
-    {
-        Matrix = resultRawMatrix,
-        StartRow = 0,
-        EndRow = 0 + dividedMatrixA.A11.RowCount - 1,
-        StartCol = dividedMatrixA.A11.ColCount,
-        EndCol = dividedMatrixA.A11.ColCount + dividedMatrixA.A12.ColCount - 1
-    }) ;
+            this.CopyTo(MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A11, dividedMatrixB.A12), MatrixMultipleByRecursive(dividedMatrixA.A12, dividedMatrixB.A22))
+    , new MatrixWrapper(resultRawMatrix, 0, dividedMatrixA.A11.RowCount - 1, dividedMatrixA.A11.ColCount, dividedMatrixA.A11.ColCount + dividedMatrixA.A12.ColCount - 1));
             // 21
-            this.CopyTo(this.MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A21, dividedMatrixB.A11), MatrixMultipleByRecursive(dividedMatrixA.A22, dividedMatrixB.A21))
-    , new MatrixWrapper()
-    {
-        Matrix = resultRawMatrix,
-        StartRow = dividedMatrixA.A11.RowCount,
-        EndRow = dividedMatrixA.A11.RowCount + dividedMatrixA.A21.RowCount - 1,
-        StartCol = 0,
-        EndCol = 0 + dividedMatrixA.A11.ColCount - 1
-    });
-
+            this.CopyTo(MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A21, dividedMatrixB.A11), MatrixMultipleByRecursive(dividedMatrixA.A22, dividedMatrixB.A21))
+    , new MatrixWrapper(resultRawMatrix, dividedMatrixA.A11.RowCount, dividedMatrixA.A11.RowCount + dividedMatrixA.A21.RowCount - 1, 0, dividedMatrixA.A11.ColCount - 1));
             // 22
-            this.CopyTo(this.MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A21, dividedMatrixB.A12), MatrixMultipleByRecursive(dividedMatrixA.A22, dividedMatrixB.A22))
-    , new MatrixWrapper()
-    {
-        Matrix = resultRawMatrix,
-        StartRow = dividedMatrixA.A11.RowCount,
-        EndRow = dividedMatrixA.A11.RowCount + dividedMatrixA.A21.RowCount - 1,
-        StartCol = dividedMatrixA.A11.ColCount,
-        EndCol = dividedMatrixA.A11.ColCount + dividedMatrixA.A12.ColCount - 1
-    });
+            this.CopyTo(MatrixAdd(MatrixMultipleByRecursive(dividedMatrixA.A21, dividedMatrixB.A12), MatrixMultipleByRecursive(dividedMatrixA.A22, dividedMatrixB.A22))
+    , new MatrixWrapper(resultRawMatrix, dividedMatrixA.A11.RowCount, dividedMatrixA.A11.RowCount + dividedMatrixA.A21.RowCount - 1, dividedMatrixA.A11.ColCount, dividedMatrixA.A11.ColCount + dividedMatrixA.A12.ColCount - 1));
             return resultRawMatrix;
         }
     }
