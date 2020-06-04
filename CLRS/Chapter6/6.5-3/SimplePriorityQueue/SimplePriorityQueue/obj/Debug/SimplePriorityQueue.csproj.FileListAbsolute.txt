@@ -1,0 +1,6 @@
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\bin\Debug\SimplePriorityQueue.exe.config
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\bin\Debug\SimplePriorityQueue.exe
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\bin\Debug\SimplePriorityQueue.pdb
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\obj\Debug\SimplePriorityQueue.csprojAssemblyReference.cache
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\obj\Debug\SimplePriorityQueue.exe
+D:\workspace\CLRS\Chapter6\6.5-3\SimplePriorityQueue\SimplePriorityQueue\obj\Debug\SimplePriorityQueue.pdb
