@@ -60,12 +60,6 @@ namespace SimplePriorityQueue
             {
                 return false;
             }
-
-            if (rightChildIndex < inputArray.Length 
-                && inputArray[rightChildIndex] <= inputArray[nodeIndex])
-            { 
-                
-            }
         }
 
     }
