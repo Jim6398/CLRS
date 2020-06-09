@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHeapTest", "DHeapTest\DHeapTest.csproj", "{A87C1931-B720-4717-BE24-089CB24F6CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "DHeap\Heap.csproj", "{14081DD7-921A-4330-BF26-F8AD95B3B758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A87C1931-B720-4717-BE24-089CB24F6CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87C1931-B720-4717-BE24-089CB24F6CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87C1931-B720-4717-BE24-089CB24F6CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87C1931-B720-4717-BE24-089CB24F6CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14081DD7-921A-4330-BF26-F8AD95B3B758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14081DD7-921A-4330-BF26-F8AD95B3B758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14081DD7-921A-4330-BF26-F8AD95B3B758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14081DD7-921A-4330-BF26-F8AD95B3B758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C7D9E9A-4BB1-4DEE-B800-EF19EB9B63E8}
+	EndGlobalSection
+EndGlobal
