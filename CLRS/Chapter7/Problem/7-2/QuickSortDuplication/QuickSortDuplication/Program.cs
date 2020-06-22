@@ -21,8 +21,33 @@ namespace QuickSortDuplication
         static void Main(string[] args)
         {
             int[] arrayTest = new int[] { 1, 11, 2, 12, 13, 5, 7, 10, 10, 8, 10, 17, 19, 10 };
-            IndexResult partitionResult = Partition(arrayTest, 0, arrayTest.Length - 1);
+            QuickSort(arrayTest, 0, arrayTest.Length - 1);
             Console.WriteLine(string.Join(",", arrayTest));
+        }
+
+
+        public static void RandomQuickSort(int[] arrayTest, int startIndex, int endIndex)
+        {
+            if (startIndex >= endIndex)
+            {
+                return;
+            }
+            int randomIndex = new Random().Next(startIndex, endIndex);
+            Exchange(ref arrayTest[randomIndex], ref arrayTest[endIndex]);
+            IndexResult result = Partition(arrayTest, startIndex, endIndex);
+            RandomQuickSort(arrayTest, startIndex, result.equalStartIndex - 1);
+            RandomQuickSort(arrayTest, result.equalEndIndex + 1, endIndex);
+        }
+
+        public static void QuickSort(int[] arrayTest, int startIndex, int endIndex)
+        {
+            if (startIndex >= endIndex)
+            {
+                return;
+            }
+            IndexResult result = Partition(arrayTest, startIndex, endIndex);
+            QuickSort(arrayTest, startIndex, result.equalStartIndex - 1);
+            QuickSort(arrayTest, result.equalEndIndex + 1, endIndex);
         }
 
         private static IndexResult Partition(int[] arrayToSort, int startIndex, int endIndex)

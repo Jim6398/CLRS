@@ -1,0 +1,2 @@
+这道题我认为
+https://walkccc.github.io/CLRS/Chap07/Problems/7-2/ 这个里面给出的答案比较合乎题的本意。
