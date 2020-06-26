@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeCountTest", "RangeCountTest\RangeCountTest.csproj", "{33496EB5-D1B1-4031-9D4D-3EA79B874748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33496EB5-D1B1-4031-9D4D-3EA79B874748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33496EB5-D1B1-4031-9D4D-3EA79B874748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33496EB5-D1B1-4031-9D4D-3EA79B874748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33496EB5-D1B1-4031-9D4D-3EA79B874748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A784E47D-2556-4463-972F-1B3EAB5FD987}
+	EndGlobalSection
+EndGlobal
