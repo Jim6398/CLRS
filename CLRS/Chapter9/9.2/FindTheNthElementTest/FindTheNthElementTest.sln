@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheNthElementTest", "FindTheNthElementTest\FindTheNthElementTest.csproj", "{AB734D1F-8F36-492F-AFCE-5A0399FEE50E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB734D1F-8F36-492F-AFCE-5A0399FEE50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB734D1F-8F36-492F-AFCE-5A0399FEE50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB734D1F-8F36-492F-AFCE-5A0399FEE50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB734D1F-8F36-492F-AFCE-5A0399FEE50E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D38D56F-E383-4714-B2CD-0059206C07C8}
+	EndGlobalSection
+EndGlobal
