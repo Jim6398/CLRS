@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Utility.Commmon;
 
-namespace FindTheNthElementTest
+namespace RandomizedSelectByLoopTest
 {
     class Program
     {
@@ -13,35 +18,37 @@ namespace FindTheNthElementTest
             }
 
             int[] randomizedArray = CommonFunc.RandomizeArray(inputArrayTest);
-
-
-
             Console.WriteLine(string.Join(",", randomizedArray));
-            Console.WriteLine(RandomSelect(randomizedArray, 0, randomizedArray.Length - 1, 64));
+            Console.WriteLine(RandomSelect(randomizedArray, 0, randomizedArray.Length - 1, 89));
         }
+
 
         public static int RandomSelect(int[] inputArray, int startIndex, int endIndex, int ith)
         {
-            if (startIndex == endIndex)
+            while (true)
             {
-                return inputArray[startIndex];
-            }
+                if (startIndex == endIndex)
+                {
+                    return inputArray[startIndex];
+                }
+                int pivotIndex = RandomPartition(inputArray, startIndex, endIndex);
+                int currentPivotSequence = pivotIndex - startIndex + 1;
+                if (currentPivotSequence == ith)
+                {
+                    return inputArray[pivotIndex];
+                }
 
-            // 第i个元素总是相对于当前的startIndex
-            int pivotIndex = RandomPartition(inputArray, startIndex, endIndex);
-            int currentPivotOrder = pivotIndex - startIndex + 1;
-            if (currentPivotOrder == ith)
-            {
-                return inputArray[pivotIndex];
-            }
+                if (currentPivotSequence < ith)
+                {
+                    startIndex = pivotIndex + 1;
+                    ith -= currentPivotSequence;
 
-            if (ith < currentPivotOrder)
-            {
-                return RandomSelect(inputArray, startIndex, pivotIndex - 1, ith);
-            }
-            else
-            {
-                return RandomSelect(inputArray, pivotIndex + 1, endIndex, ith - currentPivotOrder);
+                }
+                else
+                {
+                    endIndex = pivotIndex - 1;
+                }
+
             }
         }
 
@@ -56,14 +63,8 @@ namespace FindTheNthElementTest
                     CommonFunc.Exchange(ref inputArray[i], ref inputArray[++lessThanIndex]);
                 }
             }
-
             CommonFunc.Exchange(ref inputArray[lessThanIndex + 1], ref inputArray[endIndex]);
-
             return lessThanIndex + 1;
         }
-
-
-
-
     }
 }
