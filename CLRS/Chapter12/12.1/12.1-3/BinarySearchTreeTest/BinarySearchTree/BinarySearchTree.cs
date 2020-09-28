@@ -140,5 +140,65 @@ namespace BinarySearchTree
             }
             return resultArray;
         }
+
+        public int[] InOrderVisitWithoutUsingStack()
+        {
+            int[] resultArray = new int[this.Count];
+            int index = 0;
+            BinaryTreeNode currentNode = this.RootNode;
+            BinaryTreeNode lastChildNode = null;
+
+            do
+            {
+                if (lastChildNode == null)
+                {
+                    if (currentNode.LeftChild != null)
+                    {
+                        currentNode = currentNode.LeftChild;
+                        lastChildNode = null;
+                    }
+                    else
+                    {
+                        // visited
+                        resultArray[index++] = currentNode.Key;
+                        if (currentNode.RightChild != null)
+                        {
+                            currentNode = currentNode.RightChild;
+                            lastChildNode = null;
+                        }
+                        else
+                        {
+                            lastChildNode = currentNode;
+                            currentNode = currentNode.Parent;
+                        }
+                    }
+                }
+                else
+                {
+                    if (currentNode.LeftChild == lastChildNode)
+                    {
+                        // we just visited left child.
+                        resultArray[index++] = currentNode.Key;
+                        if (currentNode.RightChild == null)
+                        {
+                            lastChildNode = currentNode;
+                            currentNode = currentNode.Parent;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.RightChild;
+                            lastChildNode = null;
+                        }
+                    }
+                    else
+                    {
+                        lastChildNode = currentNode;
+                        currentNode = currentNode.Parent;
+                    }
+                }
+            } while (currentNode != null);
+           
+            return resultArray;
+        }
     }
 }
